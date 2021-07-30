@@ -5,199 +5,201 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education</title>
+    <title>Academy – Learning Management Theme</title>
 
-    <link rel="shortcut icon" href="./icon.png">
-    <link href="css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link href="./css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/test-style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body id="plan-page">
-    <header class="header">
-        <nav class="navbar navbar-expand-sm bg-dark">
-            <a class="navbar-brand header__logo text-white" href="#">
-                <img class="header__img" src="./images/logo.png">
-                Academy
-            </a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse header__menu" id="collapsibleNavId">
-                <div class="ml-auto">
-                    <ul class="navbar-nav">
-                        <li class="header__menu-item">
-                            <div class="dropdown">
-                                <a class="nav-link text-white" type="button" data-toggle="dropdown">
-                                    Home
-                                </a>
-                                <div class="dropdown-menu py-0 border-0">
-                                    <ul class="nav flex-column">
-                                        <li class="bg-dark">
-                                            <a class="nav-link text-white" href="#">Stretched Slider</a>
-                                        </li>
-                                        <li class="bg-dark">
-                                            <a class="nav-link text-white" href="#">Boxed Slider</a>
-                                        </li>
-                                        <li class="">
-                                            <div class="dropdown-2">
-                                                <a class="nav-link text-white bg-dark" type="button"
-                                                    data-toggle="dropdown-2">
-                                                    Dropdown
-                                                </a>
-                                                <div class="dropdown-menu-2 bg-dark">
-                                                    <a class="dropdown-item" href="#">Action</a>
-                                                    <a class="dropdown-item disabled" href="#">Disabled action</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="nav-link text-white" href="#">Courses</a>
-                        </li>
-                        <li class="header__menu-item header__menu-item--active">
-                            <a class="nav-link text-white" href="#">Plans
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="nav-link text-white" href="#">News</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="nav-link text-white" href="#">About</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="nav-link text-white" href="#">Support</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="btn btn-dark" href="#" role="button">
-                                <i class="fas fa-plus"></i>
-                            </a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="btn btn-dark" href="#" role="button">
-                                <i class="fas fa-search"></i>
-                            </a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a name="" id="" class="btn btn-dark" href="#" role="button">
-                                <img src="./images/button_icons.png">
-                                Sign in
-                            </a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a name="" id="" class="btn btn-orange" href="#" role="button">
-                                <i class="fas fa-user"></i>
-                                Register
-                            </a>
-                        </li>
-                    </ul>
-
+    <header class="bg-dark">
+        <div class="py-3">
+            <nav class="navbar bg-dark">
+                <div class="row w-100" style="display: contents;">
+                    <div class="col-md-2 text-center">
+                        <a class="header__logo navbar-brand  text-white" href="#">
+                            <img src="./images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-md-10 d-flex pt-2">
+                        <div class="header__select-menu d-lg-none mr-2">
+                            <p class="position-absolute">Plans</p>
+                            <select class="bg-white custom-select-sm" style="opacity: 0;">
+                                <option value="./index.html">Home</option>
+                                <option value="./course.html">Courses</option>
+                                <option value="./plan.html" selected>Plans</option>
+                                <option value="./news.html">News</option>
+                                <option value="./about.html">About</option>
+                                <option value="./support.html">Support</option>
+                            </select>
+                        </div>
+                        <div class="header__nav-menu ml-auto">
+                            <ul class="list-unstyled d-inline-flex">
+                                <li class="header__menu-item mx-0">
+                                    <a class="nav-link text-white px-2" href="./index.html">Home</a>
+                                </li>
+                                <li class="header__menu-item mx-0">
+                                    <a class="nav-link text-white px-2" href="./course.html">Courses</a>
+                                </li>
+                                <li class="header__menu-item header__menu-item--active mx-0">
+                                    <a class="nav-link text-white px-2" href="./plan.html">Plans
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="header__menu-item mx-0">
+                                    <a class="nav-link text-white px-2" href="./news.html">News</a>
+                                </li>
+                                <li class="header__menu-item mx-0">
+                                    <a class="nav-link text-white px-2" href="./about.html">About</a>
+                                </li>
+                                <li class="header__menu-item mx-0">
+                                    <a class="nav-link text-white px-2" href="./support.html">Support</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__options-menu">
+                            <ul class="list-unstyled d-inline-flex mb-0">
+                                <li class="header__options-item">
+                                    <a id="header__plus-button" class="btn btn-dark" href="#" role="button"
+                                        data-toggle="tooltip" data-placement="bottom">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                </li>
+                                <li class="header__options-item contain-input">
+                                    <div class="header__search-form my-0">
+                                        <input class="form-control my-0 px-3" type="text" placeholder="Search"
+                                            aria-label="Search">
+                                    </div>
+                                </li>
+                                <li class="header__options-item">
+                                    <a name="" id="" class="btn btn-dark" href="#" role="button">
+                                        <img src="./images/button_icons.png">
+                                        Sign in
+                                    </a>
+                                </li>
+                                <li class="header__options-item">
+                                    <a name="" id="" class="btn btn-orange" href="#" role="button">
+                                        <i class="fas fa-user"></i>
+                                        Register
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__search-form-mobile d-md-none my-2">
+                        <input class="form-control my-0" type="text" placeholder="Search" aria-label="Search">
+                    </div>
+                    <div class="header__select-menu-mobile d-md-none">
+                        <p class="position-absolute">Plans</p>
+                        <select class="bg-white custom-select-sm" style="opacity: 0;">
+                            <option value="./index.html">Home</option>
+                            <option value="./course.html">Courses</option>
+                            <option value="./plan.html" selected>Plans</option>
+                            <option value="./news.html">News</option>
+                            <option value="./about.html">About</option>
+                            <option value="./support.html">Support</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section class="page-title">
-            <div class="section-inner-wrapper">
-                <h1 class="text-white">Plans</h1>
-            </div>
-        </section>
-        <section class="main">
-            <div class="section-inner-wrapper">
-                <div class="row">
-                    <div class="col-3">
-                        <div class="plan text-center">
-                            <h3 class="plan__header bg-dark">Starter</h3>
-                            <div class="plan__price bg-gray">
-                                <span class="amount">$142 </span>
-                                / week
-                            </div>
-                            <ul class="plan__description">
-                                <li class="plan__item border-gray">Access to all starter courses</li>
-                                <li class="plan__item border-gray">Cum sociis natoque petibus</li>
-                                <li class="plan__item border-gray">Vestibulum posuere et arcu</li>
-                                <li class="plan__item border-gray">Maecenas nec dolor vitae</li>
-                                <li class="plan__item border-gray">Aenean id tincidunt ultrices</li>
-                            </ul>
-                            <div class="plan__footer bg-gray">
-                                <a name="" id="" class="btn btn-primary" href="#" role="button">Subscribe now</a>
-                            </div>
+    <section class="page-title">
+        <div class="section-inner-wrapper">
+            <h1 class="text-white">Plans</h1>
+        </div>
+    </section>
+    <section class="main">
+        <div class="section-inner-wrapper">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="plan text-center">
+                        <h3 class="plan__header bg-dark">Starter</h3>
+                        <div class="plan__price bg-gray">
+                            <span class="amount">$142 </span>
+                            / week
+                        </div>
+                        <ul class="plan__description">
+                            <li class="plan__item border-gray">Access to all starter courses</li>
+                            <li class="plan__item border-gray">Cum sociis natoque petibus</li>
+                            <li class="plan__item border-gray">Vestibulum posuere et arcu</li>
+                            <li class="plan__item border-gray">Maecenas nec dolor vitae</li>
+                            <li class="plan__item border-gray">Aenean id tincidunt ultrices</li>
+                        </ul>
+                        <div class="plan__footer bg-gray">
+                            <a name="" id="" class="btn btn-primary" href="#" role="button">Subscribe now</a>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="plan text-center">
-                            <h3 class="plan__header bg-dark">Starter</h3>
-                            <div class="plan__price bg-gray">
-                                <span class="amount">$142 </span>
-                                / week
-                            </div>
-                            <ul class="plan__description">
-                                <li class="plan__item border-gray">Access to all starter courses</li>
-                                <li class="plan__item border-gray">Cum sociis natoque petibus</li>
-                                <li class="plan__item border-gray">Vestibulum posuere et arcu</li>
-                                <li class="plan__item border-gray">Maecenas nec dolor vitae</li>
-                                <li class="plan__item border-gray">Aenean id tincidunt ultrices</li>
-                            </ul>
-                            <div class="plan__footer bg-gray">
-                                <a name="" id="" class="btn btn-primary" href="#" role="button">Subscribe now</a>
-                            </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="plan text-center">
+                        <h3 class="plan__header bg-dark">Starter</h3>
+                        <div class="plan__price bg-gray">
+                            <span class="amount">$142 </span>
+                            / week
+                        </div>
+                        <ul class="plan__description">
+                            <li class="plan__item border-gray">Access to all starter courses</li>
+                            <li class="plan__item border-gray">Cum sociis natoque petibus</li>
+                            <li class="plan__item border-gray">Vestibulum posuere et arcu</li>
+                            <li class="plan__item border-gray">Maecenas nec dolor vitae</li>
+                            <li class="plan__item border-gray">Aenean id tincidunt ultrices</li>
+                        </ul>
+                        <div class="plan__footer bg-gray">
+                            <a name="" id="" class="btn btn-primary" href="#" role="button">Subscribe now</a>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="plan text-center">
-                            <h3 class="plan__header bg-dark">Starter</h3>
-                            <div class="plan__price bg-gray">
-                                <span class="amount">$142 </span>
-                                / week
-                            </div>
-                            <ul class="plan__description">
-                                <li class="plan__item border-gray">Access to all starter courses</li>
-                                <li class="plan__item border-gray">Cum sociis natoque petibus</li>
-                                <li class="plan__item border-gray">Vestibulum posuere et arcu</li>
-                                <li class="plan__item border-gray">Maecenas nec dolor vitae</li>
-                                <li class="plan__item border-gray">Aenean id tincidunt ultrices</li>
-                            </ul>
-                            <div class="plan__footer bg-gray">
-                                <a name="" id="" class="btn btn-primary" href="#" role="button">Subscribe now</a>
-                            </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="plan text-center">
+                        <h3 class="plan__header bg-dark">Starter</h3>
+                        <div class="plan__price bg-gray">
+                            <span class="amount">$142 </span>
+                            / week
+                        </div>
+                        <ul class="plan__description">
+                            <li class="plan__item border-gray">Access to all starter courses</li>
+                            <li class="plan__item border-gray">Cum sociis natoque petibus</li>
+                            <li class="plan__item border-gray">Vestibulum posuere et arcu</li>
+                            <li class="plan__item border-gray">Maecenas nec dolor vitae</li>
+                            <li class="plan__item border-gray">Aenean id tincidunt ultrices</li>
+                        </ul>
+                        <div class="plan__footer bg-gray">
+                            <a name="" id="" class="btn btn-primary" href="#" role="button">Subscribe now</a>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="plan text-center">
-                            <h3 class="plan__header bg-dark">Starter</h3>
-                            <div class="plan__price bg-gray">
-                                <span class="amount">$142 </span>
-                                / week
-                            </div>
-                            <ul class="plan__description">
-                                <li class="plan__item border-gray">Access to all starter courses</li>
-                                <li class="plan__item border-gray">Cum sociis natoque petibus</li>
-                                <li class="plan__item border-gray">Vestibulum posuere et arcu</li>
-                                <li class="plan__item border-gray">Maecenas nec dolor vitae</li>
-                                <li class="plan__item border-gray">Aenean id tincidunt ultrices</li>
-                            </ul>
-                            <div class="plan__footer bg-gray">
-                                <a name="" id="" class="btn btn-primary" href="#" role="button">Subscribe now</a>
-                            </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="plan text-center">
+                        <h3 class="plan__header bg-dark">Starter</h3>
+                        <div class="plan__price bg-gray">
+                            <span class="amount">$142 </span>
+                            / week
+                        </div>
+                        <ul class="plan__description">
+                            <li class="plan__item border-gray">Access to all starter courses</li>
+                            <li class="plan__item border-gray">Cum sociis natoque petibus</li>
+                            <li class="plan__item border-gray">Vestibulum posuere et arcu</li>
+                            <li class="plan__item border-gray">Maecenas nec dolor vitae</li>
+                            <li class="plan__item border-gray">Aenean id tincidunt ultrices</li>
+                        </ul>
+                        <div class="plan__footer bg-gray">
+                            <a name="" id="" class="btn btn-primary" href="#" role="button">Subscribe now</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
     <footer>
         <div class="section-inner-wrapper">
             <div class="row">
-                <div class="col-3">
+                <div class="col-md-3 text-center">
                     <p class="text-white copy-right">Academy Theme © 2021</p>
                 </div>
-                <div class="col-9">
+                <div class="col-md-9">
                     <div class="text-right">
                         <ul class="footer-nav">
                             <li><a class="text-white footer__menu-item" href="#">Home</a></li>
@@ -211,12 +213,43 @@
             </div>
         </div>
     </footer>
-
+ 
     <script src="./js/jquery-3.3.1.min.js"></script>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap-4.3.1.js"></script>
-
-
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script>
+        $('[data-toggle="tooltip"]').tooltip({
+            trigger: 'click',
+            html: true,
+            title: '<ul class="list-unstyled mt-4 mx-2">'
+                + '<li class="">'
+                + '<a name="" id="" class="btn btn-primary py-0 px-1 mb-2" style="background-color: #1b95e0;" href="#" role="button">'
+                + '<i class="fab fa-twitter mr-1"></i>'
+                + 'Tweet'
+                + '</a>'
+                + '</li>'
+                + '<li>'
+                + '<a name="" id="" class="btn btn-primary py-0 px-1 mb-2" href="#" role="button">'
+                + '<i class="fas fa-thumbs-up mr-3"></i>'
+                + 'Like'
+                + '</a>'
+                + '</li>'
+                + '</ul>'
+        })
+    </script>
+    <script>
+        $('.header__select-menu select').change(function () {
+            var url = $(this).val(); 
+            if (url) { 
+                window.location = url;
+            }
+            return false;
+        })
+        $('.header__select-menu-mobile select').change(function () {
+            var url = $(this).val(); 
+            if (url) { 
+                window.location = url;
+            }
+            return false;
+        })
+    </script>
 </body>
-
-</html>

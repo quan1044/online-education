@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy – Learning Management Theme</title>
+
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link href="./css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/test-style.css" rel="stylesheet" type="text/css">
+    <style>
+        .tabs-left,
+        .tabs-right {
+            border-bottom: none;
+            padding-top: 2px;
+        }
+
+        .tabs-left {
+            border-right: 1px solid #ddd;
+        }
+
+        .tabs-right {
+            border-left: 1px solid #ddd;
+        }
+
+        .tabs-left>li,
+        .tabs-right>li {
+            float: none;
+            margin-bottom: 2px;
+        }
+
+        .tabs-left>li {
+            margin-right: -1px;
+        }
+
+        .tabs-right>li {
+            margin-left: -1px;
+        }
+
+        .tabs-left>li.active>a,
+        .tabs-left>li.active>a:hover,
+        .tabs-left>li.active>a:focus {
+            border-bottom-color: #ddd;
+            border-right-color: transparent;
+        }
+
+        .tabs-right>li.active>a,
+        .tabs-right>li.active>a:hover,
+        .tabs-right>li.active>a:focus {
+            border-bottom: 1px solid #ddd;
+            border-left-color: transparent;
+        }
+
+        .tabs-left>li>a {
+            border-radius: 4px 0 0 4px;
+            margin-right: 0;
+            display: block;
+        }
+
+        .tabs-right>li>a {
+            border-radius: 0 4px 4px 0;
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body id="about-page">
+    <header class="bg-dark">
+        <div class="py-3">
+            <nav class="navbar bg-dark">
+                <div class="row w-100" style="display: contents;">
+                    <div class="col-md-2 text-center">
+                        <a class="header__logo navbar-brand  text-white" href="#">
+                            <img src="./images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-md-10 d-flex pt-2">
+                        <div class="header__select-menu d-lg-none mr-2">
+                            <p class="position-absolute">About</p>
+                            <select class="bg-white custom-select-sm" style="opacity: 0;">
+                                <option value="./index.html">Home</option>
+                                <option value="./course.html">Courses</option>
+                                <option value="./plan.html">Plans</option>
+                                <option value="./news.html">News</option>
+                                <option value="./about.html" selected>About</option>
+                                <option value="./support.html">Support</option>
+                            </select>
+                        </div>
+                        <div class="header__nav-menu ml-auto">
+                            <ul class="list-unstyled d-inline-flex">
+                                <li class="header__menu-item mx-0">
+                                    <a class="nav-link text-white px-2" href="./index.html">Home</a>
+                                </li>
+                                <li class="header__menu-item mx-0">
+                                    <a class="nav-link text-white px-2" href="./course.html">Courses</a>
+                                </li>
+                                <li class="header__menu-item mx-0">
+                                    <a class="nav-link text-white px-2" href="./plan.html">Plans</a>
+                                </li>
+                                <li class="header__menu-item mx-0">
+                                    <a class="nav-link text-white px-2" href="./news.html">News</a>
+                                </li>
+                                <li class="header__menu-item header__menu-item--active mx-0">
+                                    <a class="nav-link text-white px-2" href="./about.html">About
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="header__menu-item mx-0">
+                                    <a class="nav-link text-white px-2" href="./support.html">Support</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__options-menu">
+                            <ul class="list-unstyled d-inline-flex mb-0">
+                                <li class="header__options-item">
+                                    <a id="header__plus-button" class="btn btn-dark" href="#" role="button"
+                                        data-toggle="tooltip" data-placement="bottom">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                </li>
+                                <li class="header__options-item contain-input">
+                                    <div class="header__search-form my-0">
+                                        <input class="form-control my-0 px-3" type="text" placeholder="Search"
+                                            aria-label="Search">
+                                    </div>
+                                </li>
+                                <li class="header__options-item">
+                                    <a name="" id="" class="btn btn-dark" href="#" role="button">
+                                        <img src="./images/button_icons.png">
+                                        Sign in
+                                    </a>
+                                </li>
+                                <li class="header__options-item">
+                                    <a name="" id="" class="btn btn-orange" href="#" role="button">
+                                        <i class="fas fa-user"></i>
+                                        Register
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__search-form-mobile d-md-none my-2">
+                        <input class="form-control my-0" type="text" placeholder="Search" aria-label="Search">
+                    </div>
+                    <div class="header__select-menu-mobile d-md-none">
+                        <p class="position-absolute">About</p>
+                        <select class="bg-white custom-select-sm" style="opacity: 0;">
+                            <option value="./index.html">Home</option>
+                            <option value="./course.html">Courses</option>
+                            <option value="./plan.html">Plans</option>
+                            <option value="./news.html">News</option>
+                            <option value="./about.html" selected>About</option>
+                            <option value="./support.html">Support</option>
+                        </select>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="page-title">
+        <div class="section-inner-wrapper">
+            <h1 class="text-white">About</h1>
+        </div>
+    </section>
+    <section class="about-tab">
+        <div class="section-inner-wrapper">
+            <div class="row">
+                <div class="col-md-3 py-3">
+                    <!-- required for floating -->
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs tabs-left sideways d-block">
+                        <li class="active about-tab__item"><a class="text-dark" href="#online-learning"
+                                data-toggle="tab"><strong>Online Learning</strong></a></li>
+                        <li class="about-tab__item"><a class="text-dark" href="#woocommerce"
+                                data-toggle="tab"><strong>Woocommerce</strong></a></li>
+                        <li class="about-tab__item"><a class="text-dark" href="#user-profile"
+                                data-toggle="tab"><strong>User Profiles</strong></a></li>
+                        <li class="about-tab__item"><a class="text-dark" href="#media-player"
+                                data-toggle="tab"><strong>Media Player</strong></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="online-learning">
+                            <div class="row">
+                                <div class="col-md-7 py-3">
+                                    <h2>Learning Management</h2>
+                                    <p class="about-tab__summary">
+                                        <strong>Quisque id augue erat, suscipit ultricies est. Maecenas feugiat justo ac
+                                            massa
+                                            porttitor mollis auctor nulla ullamcorper. sed blandit interdum.</strong>
+                                    </p>
+                                    <p class="about-tab__description">Penatibus et magnis dis parturient montes,
+                                        nascetur
+                                        ridiculus mus. Integer
+                                        fringilla magna ut risus sagittis ultrices. Nam eget varius sem. Nam mattis
+                                        consectetur suscipit. Vivamus quis ante enim. Cras id sodales metus.
+
+                                        Suspendisse luctus, felis at fringilla dictum, erat massa vehicula velit, id
+                                        venenatis eros libero et lectus. Proin ullamcorper molestie lectus, sit amet
+                                        condimentum dui tincidunt ut. In tempor faucibus eros, sed auctor orci ultricies
+                                        non suspen.</p>
+                                    <a name="" id="" class="btn btn-orange" href="#" role="button">Purchase Now</a>
+                                </div>
+                                <div class="col-md-5">
+                                    <img class="img-fluid" src="./images/image_62.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="woocommerce">
+                            <div class="row">
+                                <div class="col-md-7 py-3">
+                                    <h2>WooCommerce Integration</h2>
+                                    <p class="about-tab__summary">
+                                        <strong>Nulla in orci justo. In elit elit, tempus sit amet pellentesque ut,
+                                            tempus ac risus. Suspendisse imperdiet, mi in bibendum scelerisque
+                                            massa.</strong>
+                                    </p>
+                                    <p class="about-tab__description">Quisque volutpat nunc ligula. Praesent nec massa
+                                        in
+                                        tortor malesuada conse scelerisque. Sed lobortis interdum pulvinar. Maecenas et
+                                        est vel nunc imperdiet blandit at sed turpis. Mauris non libero ut nulla tempus
+                                        gravida nec vel erat.
+
+                                        Fusce a justo non dui imperdiet ultricies. Donec consectetur metus sed velit
+                                        placerat pulvinar. Nam neque libero, tristique eu placerat sed, consectetur
+                                        mattis leo. Aliquam sapien nulla, mattis ac luctus tincidunt, gravida quam.</p>
+                                    <a name="" id="" class="btn btn-orange" href="#" role="button">Purchase Now</a>
+                                </div>
+                                <div class="col-md-5">
+                                    <img class="img-fluid" src="./images/image_65.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="user-profile">
+                            <div class="row">
+                                <div class="col-md-7 py-3">
+                                    <h2>Personal User Profiles</h2>
+                                    <p class="about-tab__summary">
+                                        <strong>Fusce euismod euismod enim non adipiscing. Integer ante nisi, dictum
+                                            tempus elementum hendrerit, convallis a tortor maecenas sed ante.</strong>
+                                    </p>
+                                    <p class="about-tab__description">Fusce a justo non dui imperdiet ultricies. Donec
+                                        consectetur metus sed velit placerat pulvinar. Nam neque libero, tristique eu
+                                        placerat sed, consectetur mattis leo. Aliquam sapien nulla, mattis ac luctus
+                                        tincidunt, gravida quam.
+
+                                        Quisque volutpat nunc ligula. Praesent nec massa in tortor malesuada conse
+                                        scelerisque. Sed lobortis interdum pulvinar. Maecenas et est vel nunc imperdiet
+                                        blandit at sed turpis. Mauris non libero ut nulla tempus gravida nec vel
+                                        praesent.</p>
+                                    <a name="" id="" class="btn btn-orange" href="#" role="button">Purchase Now</a>
+                                </div>
+                                <div class="col-md-5">
+                                    <img class="img-fluid" src="./images/image_63.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="media-player">
+                            <div class="row">
+                                <div class="col-md-7 py-3">
+                                    <h2>Built-in Media Player</h2>
+                                    <p class="about-tab__summary">
+                                        <strong>Auctor hendrerit hendrerit lacus id euismod. Aliquam erat volutpat. In
+                                            in sem tortor. Vestibulum facilisis consequat purus, vel adipiscing
+                                            velit.</strong>
+                                    </p>
+                                    <p class="about-tab__description">Etiam quam est, malesuada ut fringilla eu, auctor
+                                        vel odio. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                                        ridiculus mus. Integer fringilla magna ut risus sagittis ultrices. Nam eget
+                                        varius sem nam mattis.
+
+                                        Penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer
+                                        fringilla magna ut risus sagittis ultrices. Nam eget varius sem. Nam mattis
+                                        consectetur suscipit. Vivamus quis ante enim. Cras id sodales metus.</p>
+                                    <a name="" id="" class="btn btn-orange" href="#" role="button">Purchase Now</a>
+                                </div>
+                                <div class="col-md-5">
+                                    <img class="img-fluid" src="./images/image_64.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+    </section>
+    <section class="about-more-info">
+        <div class="section-inner-wrapper">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5><strong>About Academy</strong></h5>
+                            <p>Academy is a perfect theme for sharing and selling your knowledge online.</p>
+                            <p>Nam eget varius sem. Nam mattis consectetur suscipit. Vivamus quis ante enim. Cras id
+                                sodales metus. Maecenas et est vel nunc imperdiet blandit at sed turpis. Mauris non
+                                libero ut nulla tempus gravida nec vel praesent sodales.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5><strong>Why Choose Us</strong></h5>
+                            <ul>
+                                <li>User Progress and Course Ratings</li>
+                                <li>Lesson Attachments and Questions</li>
+                                <li>Self-hosted Audio and Video Player</li>
+                                <li>Extended Personal User Profiles</li>
+                                <li>WooCommerce Plugin Integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5><strong>From the Blog</strong></h5>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img class="img-fluid" src="./images/image_57-420x280.jpg" alt="">
+                        </div>
+                        <div class="col-md-7">
+                            <h5><strong>Learn Cooking Basics Online</strong></h5>
+                            <p>Curabitur suscipit sapien sed turpis vestibulum eget ultricies nunc cursus. Morbi ac
+                                velit eget arcu malesuada adipiscing eget cursus.</p>
+                                <a name="" id="" class="btn btn-orange" href="#" role="button">Read more</a>
+                                <span class="about-more-info__comment-count">5</span>
+                                <span class="text-secondary">February 18, 2016</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="section-inner-wrapper">
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <p class="text-white copy-right">Academy Theme © 2021</p>
+                </div>
+                <div class="col-md-9">
+                    <div class="text-right">
+                        <ul class="footer-nav">
+                            <li><a class="text-white footer__menu-item" href="#">Home</a></li>
+                            <li><a class="text-white footer__menu-item" href="#">Course</a></li>
+                            <li><a class="text-white footer__menu-item" href="#">News</a></li>
+                            <li><a class="text-white footer__menu-item" href="#">About</a></li>
+                            <li><a class="text-white footer__menu-item" href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script>
+        $('[data-toggle="tooltip"]').tooltip({
+            trigger: 'click',
+            html: true,
+            title: '<ul class="list-unstyled mt-4 mx-2">'
+                + '<li class="">'
+                + '<a name="" id="" class="btn btn-primary py-0 px-1 mb-2" style="background-color: #1b95e0;" href="#" role="button">'
+                + '<i class="fab fa-twitter mr-1"></i>'
+                + 'Tweet'
+                + '</a>'
+                + '</li>'
+                + '<li>'
+                + '<a name="" id="" class="btn btn-primary py-0 px-1 mb-2" href="#" role="button">'
+                + '<i class="fas fa-thumbs-up mr-3"></i>'
+                + 'Like'
+                + '</a>'
+                + '</li>'
+                + '</ul>'
+        })
+    </script>
+    <script>
+        $('.header__select-menu select').change(function () {
+            var url = $(this).val();
+            if (url) {
+                window.location = url;
+            }
+            return false;
+        })
+        $('.header__select-menu-mobile select').change(function () {
+            var url = $(this).val(); 
+            if (url) { 
+                window.location = url;
+            }
+            return false;
+        })
+    </script>
+</body>

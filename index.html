@@ -5,428 +5,430 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education</title>
+    <title>Academy – Learning Management Theme</title>
 
-    <link rel="shortcut icon" href="./icon.png">
-    <link href="css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link href="./css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/test-style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body id="home-page">
-    <header class="header">
-        <nav class="navbar navbar-expand-sm bg-dark">
-            <a class="navbar-brand header__logo text-white" href="#">
-                <img class="header__img" src="./images/logo.png">
-                Academy
-            </a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse header__menu" id="collapsibleNavId">
-                <div class="ml-auto">
-                    <ul class="navbar-nav">
-                        <li class="header__menu-item header__menu-item--active">
-                            <div class="dropdown">
-                                <a class="nav-link text-white" type="button" data-toggle="dropdown">
-                                    Home
-                                    <span class="sr-only">(current)</span>
-                                </a>
-                                <div class="dropdown-menu py-0 border-0">
-                                    <ul class="nav flex-column">
-                                        <li class="bg-dark">
-                                            <a class="nav-link text-white" href="#">Stretched Slider</a>
-                                        </li>
-                                        <li class="bg-dark">
-                                            <a class="nav-link text-white" href="#">Boxed Slider</a>
-                                        </li>
-                                        <li class="">
-                                            <div class="dropdown-2">
-                                                <a class="nav-link text-white bg-dark" type="button"
-                                                    data-toggle="dropdown-2">
-                                                    Dropdown
-                                                </a>
-                                                <div class="dropdown-menu-2 bg-dark">
-                                                    <a class="dropdown-item" href="#">Action</a>
-                                                    <a class="dropdown-item disabled" href="#">Disabled action</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="nav-link text-white" href="#">Courses</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="nav-link text-white" href="#">Plans</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="nav-link text-white" href="#">News</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="nav-link text-white" href="#">About</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="nav-link text-white" href="#">Support</a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="btn btn-dark" href="#" role="button">
-                                <i class="fas fa-plus"></i>
-                            </a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a class="btn btn-dark" href="#" role="button">
-                                <i class="fas fa-search"></i>
-                            </a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a name="" id="" class="btn btn-dark" href="#" role="button">
-                                <img src="./images/button_icons.png">
-                                Sign in
-                            </a>
-                        </li>
-                        <li class="header__menu-item">
-                            <a name="" id="" class="btn btn-orange" href="#" role="button">
-                                <i class="fas fa-user"></i>
-                                Register
-                            </a>
-                        </li>
-                    </ul>
-
+    <header class="bg-dark">
+        <div class="py-3">
+            <nav class="navbar bg-dark">
+                <div class="row w-100" style="display: contents;">
+                    <div class="col-md-2 text-center">
+                        <a class="header__logo navbar-brand  text-white" href="#">
+                            <img src="./images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-md-10 d-flex pt-2">
+                        <div class="header__select-menu d-lg-none mr-2">
+                            <p class="position-absolute">Home</p>
+                            <select class="bg-white custom-select-sm" style="opacity: 0;">
+                                <option value="./index.html" selected>Home</option>
+                                <option value="./course.html">Courses</option>
+                                <option value="./plan.html">Plans</option>
+                                <option value="./news.html">News</option>
+                                <option value="./about.html">About</option>
+                                <option value="./support.html">Support</option>
+                            </select>
+                        </div>
+                        <div class="header__nav-menu ml-auto">
+                            <ul class="list-unstyled d-inline-flex">
+                                <li class="header__menu-item header__menu-item--active mx-0">
+                                    <a class="nav-link text-white px-2" href="./index.html">Home
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="header__menu-item mx-0">
+                                    <a class="nav-link text-white px-2" href="./course.html">Courses</a>
+                                </li>
+                                <li class="header__menu-item mx-0">
+                                    <a class="nav-link text-white px-2" href="./plan.html">Plans
+                                    </a>
+                                </li>
+                                <li class="header__menu-item mx-0">
+                                    <a class="nav-link text-white px-2" href="./news.html">News</a>
+                                </li>
+                                <li class="header__menu-item mx-0">
+                                    <a class="nav-link text-white px-2" href="./about.html">About</a>
+                                </li>
+                                <li class="header__menu-item mx-0">
+                                    <a class="nav-link text-white px-2" href="./support.html">Support</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__options-menu">
+                            <ul class="list-unstyled d-inline-flex mb-0">
+                                <li class="header__options-item">
+                                    <a id="header__plus-button" class="btn btn-dark" href="#" role="button"
+                                        data-toggle="tooltip" data-placement="bottom">
+                                        <i class="fas fa-plus"></i>
+                                    </a>
+                                </li>
+                                <li class="header__options-item contain-input">
+                                    <div class="header__search-form my-0">
+                                        <input class="form-control my-0 px-3" type="text" placeholder="Search"
+                                            aria-label="Search">
+                                    </div>
+                                </li>
+                                <li class="header__options-item">
+                                    <a name="" id="" class="btn btn-dark" href="#" role="button">
+                                        <img src="./images/button_icons.png">
+                                        Sign in
+                                    </a>
+                                </li>
+                                <li class="header__options-item">
+                                    <a name="" id="" class="btn btn-orange" href="#" role="button">
+                                        <i class="fas fa-user"></i>
+                                        Register
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__search-form-mobile d-md-none my-2">
+                        <input class="form-control my-0" type="text" placeholder="Search" aria-label="Search">
+                    </div>
+                    <div class="header__select-menu-mobile d-md-none">
+                        <p class="position-absolute">Home</p>
+                        <select class="bg-white custom-select-sm" style="opacity: 0;">
+                            <option value="./index.html" selected>Home</option>
+                            <option value="./course.html">Courses</option>
+                            <option value="./plan.html">Plans</option>
+                            <option value="./news.html">News</option>
+                            <option value="./about.html">About</option>
+                            <option value="./support.html">Support</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section class="banner">
-            <div id="carouselId" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-5 banner__caption">
-                                <div class="d-none d-md-block ">
-                                    <h1 class="banner__title">Learning Online Becomes Easier</h1>
-                                    <p class="banner__descripption">Vestibulum ipsum diam, mattis in dictum et, vulputate
-                                        nec libero. Nunc feugiat
-                                        ultrices convallis. Nulla non nisi tellus, nec egestas est. Sed congue semper nisl
-                                        et pellentesque. In rhoncus orci eu diam rutrum.</p>
-                                    <a class="btn btn-orange" href="#" role="button">Get started</a>
-                                </div>
-                            </div>
-                            <div class="col-7">
-                                <img src="./images/slide_1.png" alt="First slide">
+    <section class="banner">
+        <div id="carouselId" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-5 banner__caption">
+                            <div class="d-none d-md-block ">
+                                <h1 class="banner__title">Learning Online Becomes Easier</h1>
+                                <p class="banner__descripption">Vestibulum ipsum diam, mattis in dictum et, vulputate
+                                    nec libero. Nunc feugiat
+                                    ultrices convallis. Nulla non nisi tellus, nec egestas est. Sed congue semper nisl
+                                    et pellentesque. In rhoncus orci eu diam rutrum.</p>
+                                <a class="btn btn-orange" href="#" role="button">Get started</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-5 banner__caption">
-                                <div class="d-none d-md-block ">
-                                    <h1 class="banner__title">Learning Online Becomes Easier</h1>
-                                    <p class="banner__descripption">Vestibulum ipsum diam, mattis in dictum et, vulputate
-                                        nec libero. Nunc feugiat
-                                        ultrices convallis. Nulla non nisi tellus, nec egestas est. Sed congue semper nisl
-                                        et pellentesque. In rhoncus orci eu diam rutrum.</p>
-                                    <a class="btn btn-orange" href="#" role="button">Get started</a>
-                                </div>
-                            </div>
-                            <div class="col-7">
-                                <img src="./images/slide_1.png" alt="First slide">
-                            </div>
+                        <div class="col-7">
+                            <img src="./images/slide_1.png" alt="First slide">
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-5 banner__caption">
-                                <div class="d-none d-md-block ">
-                                    <h1 class="banner__title">Learning Online Becomes Easier</h1>
-                                    <p class="banner__descripption">Vestibulum ipsum diam, mattis in dictum et, vulputate
-                                        nec libero. Nunc feugiat
-                                        ultrices convallis. Nulla non nisi tellus, nec egestas est. Sed congue semper nisl
-                                        et pellentesque. In rhoncus orci eu diam rutrum.</p>
-                                    <a class="btn btn-orange banner__start-button" href="#" role="button">Get started</a>
-                                </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-5 banner__caption">
+                            <div class="d-none d-md-block ">
+                                <h1 class="banner__title">Learning Online Becomes Easier</h1>
+                                <p class="banner__descripption">Vestibulum ipsum diam, mattis in dictum et, vulputate
+                                    nec libero. Nunc feugiat
+                                    ultrices convallis. Nulla non nisi tellus, nec egestas est. Sed congue semper nisl
+                                    et pellentesque. In rhoncus orci eu diam rutrum.</p>
+                                <a class="btn btn-orange" href="#" role="button">Get started</a>
                             </div>
-                            <div class="col-7">
-                                <img src="./images/slide_1.png" alt="First slide">
+                        </div>
+                        <div class="col-7">
+                            <img src="./images/slide_1.png" alt="First slide">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-5 banner__caption">
+                            <div class="d-none d-md-block ">
+                                <h1 class="banner__title">Learning Online Becomes Easier</h1>
+                                <p class="banner__descripption">Vestibulum ipsum diam, mattis in dictum et, vulputate
+                                    nec libero. Nunc feugiat
+                                    ultrices convallis. Nulla non nisi tellus, nec egestas est. Sed congue semper nisl
+                                    et pellentesque. In rhoncus orci eu diam rutrum.</p>
+                                <a class="btn btn-orange banner__start-button" href="#" role="button">Get started</a>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <img src="./images/slide_1.png" alt="First slide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <section class="feature">
+        <div class="section-inner-wrapper">
+            <div class="row">
+                <div class="col-md-4 my-2">
+                    <h2 class="feature__title">
+                        <img class="feature__icon" src="./images/image_1.jpg">
+                        Learn Anything Online
+                    </h2>
+                    <p class="feature_description">
+                        Suspendisse ante mi, iaculis ac eleifend id, venenatis non eros. Sed rhoncus gravida elit, eu
+                        sollicitudin sem iaculis. Proin scelerisque, ipsum mollis posuere metus.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="feature__title">
+                        <img class="feature__icon" src="./images/image_2.jpg">
+                        Talk to Our Experts
+                    </h2>
+                    <p class="feature_description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna mauris, sagittis tempus
+                        varius vel, eleifend ut metus. Pellentesque sapien tellus, accumsan.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="feature__title">
+                        <img class="feature__icon" src="./images/image_3.jpg">
+                        Communicate with People
+                    </h2>
+                    <p class="feature_description">
+                        Nullam viverra, magna vitae mollis venenatis, leo mi dignissim quam, et lacinia purus diam nec
+                        sapien. Cras aliquet, purus non rhoncus aliquet, dapibus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popular-course">
+        <div class="section-inner-wrapper">
+            <h1>Popular Courses</h1>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="course border">
+                        <div class="course__content">
+                            <div class="cource__price-box cource__price-box--has-price">
+                                <div class="course__price">$128</div>
+                                <div class="course__price-box-corner"></div>
+                            </div>
+                            <img class="course__img" src="./images/image_45-420x420.jpg">
+                            <h5><a class="course__name"><b>Basic Cooking Techniques</b></a></h5>
+                            <a class="course__author text-secondary">Steven Granger</a>
+                        </div>
+                        <div class="course__footer bg-light">
+                            <div class="course__users">
+                                <i class="fas fa-user"></i>
+                                12
+                            </div>
+                            <div class="course__rating">
+                                <i class="fas fa-star course__star--on"></i>
+                                <i class="fas fa-star course__star--on"></i>
+                                <i class="fas fa-star course__star--on"></i>
+                                <i class="fas fa-star course__star--on"></i>
+                                <i class="fas fa-star course__star--off"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </section>
-        <section class="feature">
-            <div class="section-inner-wrapper">
-                <div class="row">
-                    <div class="col-4">
-                        <h2 class="feature__title">
-                            <img class="feature__icon" src="./images/image_1.jpg">
-                            Learn Anything Online
-                        </h2>
-                        <p class="feature_description">
-                            Suspendisse ante mi, iaculis ac eleifend id, venenatis non eros. Sed rhoncus gravida elit, eu
-                            sollicitudin sem iaculis. Proin scelerisque, ipsum mollis posuere metus.
-                        </p>
-                    </div>
-                    <div class="col-4">
-                        <h2 class="feature__title">
-                            <img class="feature__icon" src="./images/image_2.jpg">
-                            Talk to Our Experts
-                        </h2>
-                        <p class="feature_description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna mauris, sagittis tempus
-                            varius vel, eleifend ut metus. Pellentesque sapien tellus, accumsan.
-                        </p>
-                    </div>
-                    <div class="col-4">
-                        <h2 class="feature__title">
-                            <img class="feature__icon" src="./images/image_3.jpg">
-                            Communicate with People
-                        </h2>
-                        <p class="feature_description">
-                            Nullam viverra, magna vitae mollis venenatis, leo mi dignissim quam, et lacinia purus diam nec
-                            sapien. Cras aliquet, purus non rhoncus aliquet, dapibus.
-                        </p>
+                <div class="col-md-3">
+                    <div class="course border">
+                        <div class="course__content">
+                            <div class="cource__price-box cource__price-box--has-price">
+                                <div class="course__price">$128</div>
+                                <div class="course__price-box-corner"></div>
+                            </div>
+                            <img class="course__img" src="./images/image_45-420x420.jpg">
+                            <h5><a class="course__name"><b>Basic Cooking Techniques</b></a></h5>
+                            <a class="course__author text-secondary">Steven Granger</a>
+                        </div>
+                        <div class="course__footer bg-light">
+                            <div class="course__users">
+                                <i class="fas fa-user"></i>
+                                12
+                            </div>
+                            <div class="course__rating">
+                                <i class="fas fa-star course__star--on"></i>
+                                <i class="fas fa-star course__star--on"></i>
+                                <i class="fas fa-star course__star--on"></i>
+                                <i class="fas fa-star course__star--on"></i>
+                                <i class="fas fa-star course__star--off"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="popular-course">
-            <div class="section-inner-wrapper">
-                <h1>Popular Courses</h1>
-                <div class="row">
-                    <div class="col-3">
-                        <div class="course border">
-                            <div class="course__content">
-                                <div class="cource__price-box cource__price-box--has-price">
-                                    <div class="course__price">$128</div>
-                                    <div class="course__price-box-corner"></div>
-                                </div>
-                                <img class="course__img" src="./images/image_45-420x420.jpg">
-                                <h5><a class="course__name"><b>Basic Cooking Techniques</b></a></h5>
-                                <a class="course__author text-secondary">Steven Granger</a>
+                <div class="col-md-3">
+                    <div class="course border">
+                        <div class="course__content">
+                            <div class="cource__price-box cource__price-box--has-price">
+                                <div class="course__price">$128</div>
+                                <div class="course__price-box-corner"></div>
                             </div>
-                            <div class="course__footer bg-light">
-                                <div class="course__users">
-                                    <i class="fas fa-user"></i>
-                                    12
-                                </div>
-                                <div class="course__rating">
-                                    <i class="fas fa-star course__star--on"></i>
-                                    <i class="fas fa-star course__star--on"></i>
-                                    <i class="fas fa-star course__star--on"></i>
-                                    <i class="fas fa-star course__star--on"></i>
-                                    <i class="fas fa-star course__star--off"></i>
-                                </div>
+                            <img class="course__img" src="./images/image_45-420x420.jpg">
+                            <h5><a class="course__name"><b>Basic Cooking Techniques</b></a></h5>
+                            <a class="course__author text-secondary">Steven Granger</a>
+                        </div>
+                        <div class="course__footer bg-light">
+                            <div class="course__users">
+                                <i class="fas fa-user"></i>
+                                12
+                            </div>
+                            <div class="course__rating">
+                                <i class="fas fa-star course__star--on"></i>
+                                <i class="fas fa-star course__star--on"></i>
+                                <i class="fas fa-star course__star--on"></i>
+                                <i class="fas fa-star course__star--on"></i>
+                                <i class="fas fa-star course__star--off"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
-                        <div class="course border">
-                            <div class="course__content">
-                                <div class="cource__price-box cource__price-box--has-price">
-                                    <div class="course__price">$128</div>
-                                    <div class="course__price-box-corner"></div>
-                                </div>
-                                <img class="course__img" src="./images/image_45-420x420.jpg">
-                                <h5><a class="course__name"><b>Basic Cooking Techniques</b></a></h5>
-                                <a class="course__author text-secondary">Steven Granger</a>
+                </div>
+                <div class="col-md-3">
+                    <div class="course border">
+                        <div class="course__content">
+                            <div class="cource__price-box cource__price-box--has-price">
+                                <div class="course__price">$128</div>
+                                <div class="course__price-box-corner"></div>
                             </div>
-                            <div class="course__footer bg-light">
-                                <div class="course__users">
-                                    <i class="fas fa-user"></i>
-                                    12
-                                </div>
-                                <div class="course__rating">
-                                    <i class="fas fa-star course__star--on"></i>
-                                    <i class="fas fa-star course__star--on"></i>
-                                    <i class="fas fa-star course__star--on"></i>
-                                    <i class="fas fa-star course__star--on"></i>
-                                    <i class="fas fa-star course__star--off"></i>
-                                </div>
-                            </div>
+                            <img class="course__img" src="./images/image_45-420x420.jpg">
+                            <h5><a class="course__name"><b>Basic Cooking Techniques</b></a></h5>
+                            <a class="course__author text-secondary">Steven Granger</a>
                         </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="course border">
-                            <div class="course__content">
-                                <div class="cource__price-box cource__price-box--has-price">
-                                    <div class="course__price">$128</div>
-                                    <div class="course__price-box-corner"></div>
-                                </div>
-                                <img class="course__img" src="./images/image_45-420x420.jpg">
-                                <h5><a class="course__name"><b>Basic Cooking Techniques</b></a></h5>
-                                <a class="course__author text-secondary">Steven Granger</a>
+                        <div class="course__footer bg-light">
+                            <div class="course__users">
+                                <i class="fas fa-user"></i>
+                                12
                             </div>
-                            <div class="course__footer bg-light">
-                                <div class="course__users">
-                                    <i class="fas fa-user"></i>
-                                    12
-                                </div>
-                                <div class="course__rating">
-                                    <i class="fas fa-star course__star--on"></i>
-                                    <i class="fas fa-star course__star--on"></i>
-                                    <i class="fas fa-star course__star--on"></i>
-                                    <i class="fas fa-star course__star--on"></i>
-                                    <i class="fas fa-star course__star--off"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="course border">
-                            <div class="course__content">
-                                <div class="cource__price-box cource__price-box--has-price">
-                                    <div class="course__price">$128</div>
-                                    <div class="course__price-box-corner"></div>
-                                </div>
-                                <img class="course__img" src="./images/image_45-420x420.jpg">
-                                <h5><a class="course__name"><b>Basic Cooking Techniques</b></a></h5>
-                                <a class="course__author text-secondary">Steven Granger</a>
-                            </div>
-                            <div class="course__footer bg-light">
-                                <div class="course__users">
-                                    <i class="fas fa-user"></i>
-                                    12
-                                </div>
-                                <div class="course__rating">
-                                    <i class="fas fa-star course__star--on"></i>
-                                    <i class="fas fa-star course__star--on"></i>
-                                    <i class="fas fa-star course__star--on"></i>
-                                    <i class="fas fa-star course__star--on"></i>
-                                    <i class="fas fa-star course__star--off"></i>
-                                </div>
+                            <div class="course__rating">
+                                <i class="fas fa-star course__star--on"></i>
+                                <i class="fas fa-star course__star--on"></i>
+                                <i class="fas fa-star course__star--on"></i>
+                                <i class="fas fa-star course__star--on"></i>
+                                <i class="fas fa-star course__star--off"></i>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    
-        </section>
-        <section class="introduce">
-            <div class="section-inner-wrapper">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="expert">
-                            <h1>Top experts</h1>
+        </div>
+    </section>
+    <section class="introduce">
+        <div class="section-inner-wrapper">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="expert">
+                        <h1>Top experts</h1>
+                        <div class="row">
+                            <div class="col-3">
+                                <img class="expert__avatar" src="./images/avatar_1-96x96.jpg" alt="">
+                                <div class="expert__links">
+                                    <i class="fab fa-twitter text-center border expert__link"></i>
+                                    <i class="fab fa-facebook-f text-center expert__link"></i>
+                                    <i class="fab fa-tumblr text-center expert__link"></i>
+                                    <i class="fab fa-tumblr text-center expert__link"></i>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <h5 class="expert__name"><b>Steven Granger</b></h5>
+                                <h5 class="expert__title text-secondary">Project Manager</h5>
+                                <p class="expeert__description">Cras a neque diam. Aenean dapibus accumsan velit eget
+                                    imperdiet. Quisque sapien neque, fermentum ac pharetra ac, iaculis a elit. Morbi
+                                    tincidunt, lectus et dignissim pharetra, elit leo lacinia purus, eu porta. Aenean
+                                    adipiscing, sed lacinia sapien tincidunt.</p>
+                            </div>
+                        </div>
+                        <hr class="no-line">
+                        <div class="row">
+                            <div class="col-3">
+                                <img class="expert__avatar" src="./images/avatar_1-96x96.jpg" alt="">
+                                <div class="expert__links">
+                                    <i class="fab fa-twitter text-center border expert__link"></i>
+                                    <i class="fab fa-facebook-f text-center expert__link"></i>
+                                    <i class="fab fa-tumblr text-center expert__link"></i>
+                                    <i class="fab fa-tumblr text-center expert__link"></i>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <h5 class="expert__name"><b>Steven Granger</b></h5>
+                                <h5 class="expert__title text-secondary">Project Manager</h5>
+                                <p class="expeert__description">Cras a neque diam. Aenean dapibus accumsan velit eget
+                                    imperdiet. Quisque sapien neque, fermentum ac pharetra ac, iaculis a elit. Morbi
+                                    tincidunt, lectus et dignissim pharetra, elit leo lacinia purus, eu porta. Aenean
+                                    adipiscing, sed lacinia sapien tincidunt.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonials">
+                        <h1>Testimonials</h1>
+                        <div class="testimonial">
                             <div class="row">
                                 <div class="col-3">
-                                    <img class="expert__avatar" src="./images/avatar_1-96x96.jpg" alt="">
-                                    <div class="expert__links">
-                                        <i class="fab fa-twitter text-center border expert__link"></i>
-                                        <i class="fab fa-facebook-f text-center expert__link"></i>
-                                        <i class="fab fa-tumblr text-center expert__link"></i>
-                                        <i class="fab fa-tumblr text-center expert__link"></i>
-                                    </div>
+                                    <img class="testimonial__avatar" src="./images/avatar_27.jpg" alt="">
                                 </div>
                                 <div class="col-9">
-                                    <h5 class="expert__name"><b>Steven Granger</b></h5>
-                                    <h5 class="expert__title text-secondary">Project Manager</h5>
-                                    <p class="expeert__description">Cras a neque diam. Aenean dapibus accumsan velit eget
-                                        imperdiet. Quisque sapien neque, fermentum ac pharetra ac, iaculis a elit. Morbi
-                                        tincidunt, lectus et dignissim pharetra, elit leo lacinia purus, eu porta. Aenean
-                                        adipiscing, sed lacinia sapien tincidunt.</p>
+                                    <p class="text-secondary testimonical__comment">
+                                        <i>Pellentesque pulvinar sodales quam a placerat.
+                                            Vivamus quis vitae consectetur ligula. Ut bibendum eleifend quam eget fermentum.
+                                            Nulla facilisi. Augue aliquam augue vel odio faucibus luctus!</i>
+                                    </p>
+                                    <b>Jessica White</b>
                                 </div>
                             </div>
-                            <hr class="no-line">
+
+                        </div>
+                        <hr class="no-line">
+                        <div class="testimonial">
                             <div class="row">
                                 <div class="col-3">
-                                    <img class="expert__avatar" src="./images/avatar_1-96x96.jpg" alt="">
-                                    <div class="expert__links">
-                                        <i class="fab fa-twitter text-center border expert__link"></i>
-                                        <i class="fab fa-facebook-f text-center expert__link"></i>
-                                        <i class="fab fa-tumblr text-center expert__link"></i>
-                                        <i class="fab fa-tumblr text-center expert__link"></i>
-                                    </div>
+                                    <img class="testimonial__avatar" src="./images/avatar_27.jpg" alt="">
                                 </div>
                                 <div class="col-9">
-                                    <h5 class="expert__name"><b>Steven Granger</b></h5>
-                                    <h5 class="expert__title text-secondary">Project Manager</h5>
-                                    <p class="expeert__description">Cras a neque diam. Aenean dapibus accumsan velit eget
-                                        imperdiet. Quisque sapien neque, fermentum ac pharetra ac, iaculis a elit. Morbi
-                                        tincidunt, lectus et dignissim pharetra, elit leo lacinia purus, eu porta. Aenean
-                                        adipiscing, sed lacinia sapien tincidunt.</p>
+                                    <p class="text-secondary testimonical__comment">
+                                        <i>Pellentesque pulvinar sodales quam a placerat.
+                                            Vivamus quis vitae consectetur ligula. Ut bibendum eleifend quam eget fermentum.
+                                            Nulla facilisi. Augue aliquam augue vel odio faucibus luctus!</i>
+                                    </p>
+                                    <b>Jessica White</b>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="testimonials">
-                            <h1>Testimonials</h1>
-                            <div class="testimonial">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img class="testimonial__avatar" src="./images/avatar_27.jpg" alt="">
-                                    </div>
-                                    <div class="col-9">
-                                        <p class="text-secondary testimonical__comment">
-                                            <i>Pellentesque pulvinar sodales quam a placerat.
-                                                Vivamus quis vitae consectetur ligula. Ut bibendum eleifend quam eget fermentum.
-                                                Nulla facilisi. Augue aliquam augue vel odio faucibus luctus!</i>
-                                        </p>
-                                        <b>Jessica White</b>
-                                    </div>
+                        <hr class="no-line">
+                        <div class="testimonial">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img class="testimonial__avatar" src="./images/avatar_27.jpg" alt="">
                                 </div>
-    
-                            </div>
-                            <hr class="no-line">
-                            <div class="testimonial">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img class="testimonial__avatar" src="./images/avatar_27.jpg" alt="">
-                                    </div>
-                                    <div class="col-9">
-                                        <p class="text-secondary testimonical__comment">
-                                            <i>Pellentesque pulvinar sodales quam a placerat.
-                                                Vivamus quis vitae consectetur ligula. Ut bibendum eleifend quam eget fermentum.
-                                                Nulla facilisi. Augue aliquam augue vel odio faucibus luctus!</i>
-                                        </p>
-                                        <b>Jessica White</b>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr class="no-line">
-                            <div class="testimonial">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img class="testimonial__avatar" src="./images/avatar_27.jpg" alt="">
-                                    </div>
-                                    <div class="col-9">
-                                        <p class="text-secondary testimonical__comment">
-                                            <i>Pellentesque pulvinar sodales quam a placerat.
-                                                Vivamus quis vitae consectetur ligula. Ut bibendum eleifend quam eget fermentum.
-                                                Nulla facilisi. Augue aliquam augue vel odio faucibus luctus!</i>
-                                        </p>
-                                        <b>Jessica White</b>
-                                    </div>
+                                <div class="col-9">
+                                    <p class="text-secondary testimonical__comment">
+                                        <i>Pellentesque pulvinar sodales quam a placerat.
+                                            Vivamus quis vitae consectetur ligula. Ut bibendum eleifend quam eget fermentum.
+                                            Nulla facilisi. Augue aliquam augue vel odio faucibus luctus!</i>
+                                    </p>
+                                    <b>Jessica White</b>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    
-        </section>
-    </main>
+        </div>
+    </section>
     <footer>
         <div class="section-inner-wrapper">
             <div class="row">
-                <div class="col-3">
+                <div class="col-md-3 text-center">
                     <p class="text-white copy-right">Academy Theme © 2021</p>
                 </div>
-                <div class="col-9">
+                <div class="col-md-9">
                     <div class="text-right">
                         <ul class="footer-nav">
                             <li><a class="text-white footer__menu-item" href="#">Home</a></li>
@@ -440,20 +442,43 @@
             </div>
         </div>
     </footer>
-
+ 
     <script src="./js/jquery-3.3.1.min.js"></script>
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap-4.3.1.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
     <script>
-        $('#carouselId').on('slide.bs.carousel', function () {
-            var x = parseInt($('.banner').css('background-position-x'))
-            var y = parseInt($('.banner').css('background-position-y'));
-            if (x > -300) x = x - 100;
-            else x = -100;
-            $('.banner').css({ 'background-position': x + 'px ' + y + 'px' })
+        $('[data-toggle="tooltip"]').tooltip({
+            trigger: 'click',
+            html: true,
+            title: '<ul class="list-unstyled mt-4 mx-2">'
+                + '<li class="">'
+                + '<a name="" id="" class="btn btn-primary py-0 px-1 mb-2" style="background-color: #1b95e0;" href="#" role="button">'
+                + '<i class="fab fa-twitter mr-1"></i>'
+                + 'Tweet'
+                + '</a>'
+                + '</li>'
+                + '<li>'
+                + '<a name="" id="" class="btn btn-primary py-0 px-1 mb-2" href="#" role="button">'
+                + '<i class="fas fa-thumbs-up mr-3"></i>'
+                + 'Like'
+                + '</a>'
+                + '</li>'
+                + '</ul>'
         })
     </script>
-
+    <script>
+        $('.header__select-menu select').change(function () {
+            var url = $(this).val(); 
+            if (url) { 
+                window.location = url;
+            }
+            return false;
+        })
+        $('.header__select-menu-mobile select').change(function () {
+            var url = $(this).val(); 
+            if (url) { 
+                window.location = url;
+            }
+            return false;
+        })
+    </script>
 </body>
-
-</html>
